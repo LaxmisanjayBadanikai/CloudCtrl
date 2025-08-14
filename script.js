@@ -1,7 +1,7 @@
 // Weather App JavaScript
 class WeatherApp {
     constructor() {
-        this.apiKey = 'YOUR_API_KEY_HERE'; // Replace with your WeatherAPI.com API key
+        this.apiKey = '5d8227f1161e43a189d33628240210'; // Replace with your WeatherAPI.com API key
         this.baseUrl = 'https://api.weatherapi.com/v1';
         this.currentLocation = null;
         this.searchTimeout = null;

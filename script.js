@@ -78,7 +78,7 @@ class WeatherApp {
     }
 
     async loadDefaultLocation() {
-        // Try to get user's location, fallback to New York
+        // Try to get user's location, fallback to Bangalore
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
@@ -86,11 +86,11 @@ class WeatherApp {
                     this.fetchWeatherData(`${latitude},${longitude}`);
                 },
                 () => {
-                    this.fetchWeatherData('New York');
+                    this.fetchWeatherData('Bangalore');
                 }
             );
         } else {
-            this.fetchWeatherData('New York');
+            this.fetchWeatherData('Bangalore');
         }
     }
 
